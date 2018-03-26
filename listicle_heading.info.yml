@@ -1,0 +1,7 @@
+name: Listicle Heading
+type: module
+description: 'Provides a CKEditor plugin to embed listicle headings.'
+version: '8.x-1.0'
+core: '8.x'
+dependencies:
+  - embed
