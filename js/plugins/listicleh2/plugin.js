@@ -24,10 +24,9 @@
         // Allow h2 tag with optional title.
         allowedContent: 'h2[data-number]',
 
-        // Require abbr tag to be allowed to work.
+        // Require h2 tag to be allowed to work.
         requiredContent: 'h2',
 
-        // Prefer abbr over acronym. Transform acronyms into abbrs.
         contentForms: [
                 'h2'
         ]

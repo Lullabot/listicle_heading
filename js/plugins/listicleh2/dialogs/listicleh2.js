@@ -1,6 +1,6 @@
 /**
  * @file
- * The abbr dialog definition.
+ * The listicleh2 dialog definition.
  *
  * Created out of the CKEditor Plugin SDK:
  * http://docs.ckeditor.com/#!/guide/plugin_sdk_sample_1
@@ -27,7 +27,7 @@ CKEDITOR.dialog.add('listicleh2Dialog', function (editor) {
       // The tab contents.
       elements: [
       {
-        // Text input field for the abbreviation text.
+        // Text input field for the listicle heading number.
         type: 'text',
         id: 'listicleh2',
         label: lang.dialogListicleHeadingNumber,
