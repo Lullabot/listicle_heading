@@ -1,19 +1,17 @@
 # Listicle Heading #
 
-A CKEditor plugin for Drupal 8 and to create \<h2\> headings preceded by a number and a dot.
+A CKEditor plugin for Drupal 8 and to create headings preceded by a number and a dot.
+
+![Listicle Heading Dialog](listicle-heading-dialog.png "Listicle Heading Dialog Screenshot")
 
 ## Example ##
 
-Using the CKEditor plugin you can enter a number and the heading text. This would be the source code created:
+Using the CKEditor plugin you can enter the heading format (h2, h3, etc.) a number and the heading text. This would be the source code created:
 
 ```
-<h2 class="listing" data-number="1">My Sample Heading</h2>
+<div class="listicle">
+<h3><span class="number">1</span><span class="separator">. </span><span class="title">My sample heading</span></h3>
+</div>
 ```
 
-With the Listicle Heading Filter enabled this would be the rendered content:
-
-### 1. &nbsp;My Sample Heading ###
-
-```
-<h2 class="listing">1. &nbsp;My Sample Heading</h2>
-```
+### 1. My Sample Heading ###
