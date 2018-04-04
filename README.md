@@ -10,7 +10,7 @@ Using the CKEditor plugin you can enter the heading format (h2, h3, etc.) a numb
 
 ```
 <div class="listicle">
-<h3><span class="number">1</span><span class="separator">. </span><span class="title">My sample heading</span></h3>
+<h3><span class="number">1</span><span class="separator">. </span><span class="title">My Sample Heading</span></h3>
 </div>
 ```
 
