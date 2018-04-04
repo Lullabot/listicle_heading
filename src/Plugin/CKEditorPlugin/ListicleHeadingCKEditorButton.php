@@ -6,14 +6,14 @@ use Drupal\ckeditor\CKEditorPluginBase;
 use Drupal\editor\Entity\Editor;
 
 /**
- * Defines the "listicleh2" plugin.
+ * Defines the "listicleh" plugin.
  *
  * NOTE: The plugin ID ('id' key) corresponds to the CKEditor plugin name.
  * It is the first argument of the CKEDITOR.plugins.add() function in the
  * plugin.js file.
  *
  * @CKEditorPlugin(
- *   id = "listicleh2",
+ *   id = "listicleh",
  *   label = @Translation("Listicle heading ckeditor button")
  * )
  */
@@ -29,11 +29,11 @@ class ListicleHeadingCKEditorButton extends CKEditorPluginBase {
   public function getButtons() {
     // Make sure that the path to the image matches the file structure of
     // the CKEditor plugin you are implementing.
-    $path = drupal_get_path('module', 'listicle_heading') . '/js/plugins/listicleh2';
+    $path = drupal_get_path('module', 'listicle_heading') . '/js/plugins/listicleh';
     return array(
-      'listicleh2' => array(
+      'listicleh' => array(
         'label' => t('Listicle Heading ckeditor button'),
-        'image' => $path . '/icons/listicleh2.png',
+        'image' => $path . '/icons/listicleh.png',
       ),
     );
   }
@@ -44,7 +44,7 @@ class ListicleHeadingCKEditorButton extends CKEditorPluginBase {
   public function getFile() {
     // Make sure that the path to the plugin.js matches the file structure of
     // the CKEditor plugin you are implementing.
-    return drupal_get_path('module', 'listicle_heading') . '/js/plugins/listicleh2/plugin.js';
+    return drupal_get_path('module', 'listicle_heading') . '/js/plugins/listicleh/plugin.js';
   }
 
   /**
