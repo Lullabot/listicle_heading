@@ -1,6 +1,6 @@
 # Listicle Heading #
 
-A CKEditor plugin for Drupal 8 and to create headings preceded by a number and a dot.
+A CKEditor plugin for Drupal 8 to create headings preceded by a number and a dot.
 
 ![Listicle Heading Dialog](listicle-heading-dialog.png "Listicle Heading Dialog Screenshot")
 
