@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\listicle_heading\Plugin\CKEditorPlugin;
+namespace Drupal\ckeditor_listicle_heading\Plugin\CKEditorPlugin;
 
 use Drupal\ckeditor\CKEditorPluginBase;
 use Drupal\editor\Entity\Editor;
@@ -14,10 +14,10 @@ use Drupal\editor\Entity\Editor;
  *
  * @CKEditorPlugin(
  *   id = "listicleheading",
- *   label = @Translation("Listicle heading ckeditor button")
+ *   label = @Translation("Listicle heading")
  * )
  */
-class ListicleHeadingCKEditorButton extends CKEditorPluginBase {
+class ListicleHeading extends CKEditorPluginBase {
 
   /**
    * {@inheritdoc}
@@ -32,7 +32,7 @@ class ListicleHeadingCKEditorButton extends CKEditorPluginBase {
     $path = drupal_get_path('module', 'listicle_heading') . '/js/plugins/listicleheading';
     return array(
       'listicleheading' => array(
-        'label' => t('Listicle Heading ckeditor button'),
+        'label' => t('Listicle Heading'),
         'image' => $path . '/icons/listicleheading.png',
       ),
     );

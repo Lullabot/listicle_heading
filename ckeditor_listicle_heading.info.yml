@@ -1,4 +1,4 @@
-name: Listicle Heading
+name: CKEditor Listicle Heading
 type: module
 description: 'Provides a CKEditor plugin to embed listicle headings.'
 core: '8.x'
