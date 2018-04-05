@@ -29,7 +29,7 @@ class ListicleHeading extends CKEditorPluginBase {
   public function getButtons() {
     // Make sure that the path to the image matches the file structure of
     // the CKEditor plugin you are implementing.
-    $path = drupal_get_path('module', 'listicle_heading') . '/js/plugins/listicleheading';
+    $path = drupal_get_path('module', 'ckeditor_listicle_heading') . '/js/plugins/listicleheading';
     return array(
       'listicleheading' => array(
         'label' => t('Listicle Heading'),
@@ -44,7 +44,7 @@ class ListicleHeading extends CKEditorPluginBase {
   public function getFile() {
     // Make sure that the path to the plugin.js matches the file structure of
     // the CKEditor plugin you are implementing.
-    return drupal_get_path('module', 'listicle_heading') . '/js/plugins/listicleheading/plugin.js';
+    return drupal_get_path('module', 'ckeditor_listicle_heading') . '/js/plugins/listicleheading/plugin.js';
   }
 
   /**
