@@ -1,17 +1,17 @@
 /**
  * @file
- * The listicleh language string definitions.
+ * The listicleheading language string definitions.
  */
 
 "use strict"
 
-CKEDITOR.plugins.setLang('listicleh', 'en', {
+CKEDITOR.plugins.setLang('listicleheading', 'en', {
     buttonTitle: 'Insert Listicle Heading',
     menuItemTitle: 'Edit Listicle Heading',
     dialogTitle: 'Listicle Heading Properties',
-    dialogListicleHeadingFormat: 'Heading tag',
-    dialogListicleHeadingNumber: 'Listicle Number',
-    dialogListicleHeadingTitle: 'Heading Title',
+    dialogListicleHeadingFormat: 'Heading format',
+    dialogListicleHeadingNumber: 'Listicle number',
+    dialogListicleHeadingTitle: 'Heading title',
     dialogHeading1: 'Heading 1',
     dialogHeading2: 'Heading 2',
     dialogHeading3: 'Heading 3',

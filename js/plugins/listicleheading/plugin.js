@@ -8,42 +8,42 @@
 
 (function ($) {
   // Register the plugin within the editor.
-  CKEDITOR.plugins.add('listicleh', {
+  CKEDITOR.plugins.add('listicleheading', {
     lang: 'en',
 
     // Register the icons.
-    icons: 'listicleh',
+    icons: 'listicleheading',
 
     // The plugin initialization logic goes inside this method.
     init: function (editor) {
-      var lang = editor.lang.listicleh;
+      var lang = editor.lang.listicleheading;
 
       // Define an editor command that opens our dialog.
-      editor.addCommand('listicleh', new CKEDITOR.dialogCommand('listiclehDialog'));
+      editor.addCommand('listicleheading', new CKEDITOR.dialogCommand('listicleheadingDialog'));
 
       // Create a toolbar button that executes the above command.
-      editor.ui.addButton('listicleh', {
+      editor.ui.addButton('listicleheading', {
 
         // The text part of the button (if available) and tooptip.
         label: lang.buttonTitle,
 
         // The command to execute on click.
-        command: 'listicleh',
+        command: 'listicleheading',
 
         // The button placement in the toolbar (toolbar group name).
         toolbar: 'insert',
 
         // The path to the icon.
-        icon: this.path + 'icons/listicleh.png'
+        icon: this.path + 'icons/listicleheading.png'
       });
 
       if (editor.contextMenu) {
-        editor.addMenuGroup('listiclehGroup');
-        editor.addMenuItem('listiclehItem', {
+        editor.addMenuGroup('listicleheadingGroup');
+        editor.addMenuItem('listicleheadingItem', {
           label: lang.menuItemTitle,
-          icon: this.path + 'icons/listicleh.png',
-          command: 'listicleh',
-          group: 'listiclehGroup'
+          icon: this.path + 'icons/listicleheading.png',
+          command: 'listicleheading',
+          group: 'listicleheadingGroup'
         });
 
         editor.contextMenu.addListener(function (element) {
@@ -54,7 +54,7 @@
       }
 
       // Register our dialog file. this.path is the plugin folder path.
-      CKEDITOR.dialog.add('listiclehDialog', this.path + 'dialogs/listicleh.js');
+      CKEDITOR.dialog.add('listicleheadingDialog', this.path + 'dialogs/listicleheading.js');
     }
   });
 })(jQuery);

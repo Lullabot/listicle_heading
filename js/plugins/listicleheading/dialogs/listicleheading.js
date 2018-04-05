@@ -1,14 +1,14 @@
 /**
  * @file
- * The listicleh dialog definition.
+ * The listicleheading dialog definition.
  *
  * Created out of the CKEditor Plugin SDK:
  * http://docs.ckeditor.com/#!/guide/plugin_sdk_sample_1
  */
 
 // Our dialog definition.
-CKEDITOR.dialog.add('listiclehDialog', function (editor) {
-  var lang = editor.lang.listicleh;
+CKEDITOR.dialog.add('listicleheadingDialog', function (editor) {
+  var lang = editor.lang.listicleheading;
 
   return {
 
@@ -156,7 +156,7 @@ CKEDITOR.dialog.add('listiclehDialog', function (editor) {
       // Create a new <div> element if it does not exist.
       if (!element || element.getName() !== 'div') {
         element = editor.document.createElement('div');
-        element.setAttribute("class", "listicle");
+        element.setAttribute("class", "listicle-heading");
 
         // Flag the insertion mode for later use.
         this.insertMode = true;
