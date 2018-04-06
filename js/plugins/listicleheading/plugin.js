@@ -8,64 +8,53 @@
 
 (function ($) {
   // Register the plugin within the editor.
-  CKEDITOR.plugins.add('listicleh2', {
+  CKEDITOR.plugins.add('listicleheading', {
     lang: 'en',
 
     // Register the icons.
-    icons: 'listicleh2',
+    icons: 'listicleheading',
 
     // The plugin initialization logic goes inside this method.
     init: function (editor) {
-      var lang = editor.lang.listicleh2;
+      var lang = editor.lang.listicleheading;
 
       // Define an editor command that opens our dialog.
-      editor.addCommand('listicleh2', new CKEDITOR.dialogCommand('listicleh2Dialog', {
-
-        // Allow h2 tag with optional title.
-        allowedContent: 'h2[data-number]',
-
-        // Require h2 tag to be allowed to work.
-        requiredContent: 'h2',
-
-        contentForms: [
-                'h2'
-        ]
-      }));
+      editor.addCommand('listicleheading', new CKEDITOR.dialogCommand('listicleheadingDialog'));
 
       // Create a toolbar button that executes the above command.
-      editor.ui.addButton('listicleh2', {
+      editor.ui.addButton('listicleheading', {
 
         // The text part of the button (if available) and tooptip.
         label: lang.buttonTitle,
 
         // The command to execute on click.
-        command: 'listicleh2',
+        command: 'listicleheading',
 
         // The button placement in the toolbar (toolbar group name).
         toolbar: 'insert',
 
         // The path to the icon.
-        icon: this.path + 'icons/listicleh2.png'
+        icon: this.path + 'icons/listicleheading.png'
       });
 
       if (editor.contextMenu) {
-        editor.addMenuGroup('listicleh2Group');
-        editor.addMenuItem('listicleh2Item', {
+        editor.addMenuGroup('listicleheadingGroup');
+        editor.addMenuItem('listicleheadingItem', {
           label: lang.menuItemTitle,
-          icon: this.path + 'icons/listicleh2.png',
-          command: 'listicleh2',
-          group: 'listicleh2Group'
+          icon: this.path + 'icons/listicleheading.png',
+          command: 'listicleheading',
+          group: 'listicleheadingGroup'
         });
 
         editor.contextMenu.addListener(function (element) {
-          if (element.getAscendant('h2', true)) {
-            return { h2: CKEDITOR.TRISTATE_OFF };
+          if (element.getAscendant('div', true)) {
+            return { div: CKEDITOR.TRISTATE_OFF };
           }
         });
       }
 
       // Register our dialog file. this.path is the plugin folder path.
-      CKEDITOR.dialog.add('listicleh2Dialog', this.path + 'dialogs/listicleh2.js');
+      CKEDITOR.dialog.add('listicleheadingDialog', this.path + 'dialogs/listicleheading.js');
     }
   });
 })(jQuery);

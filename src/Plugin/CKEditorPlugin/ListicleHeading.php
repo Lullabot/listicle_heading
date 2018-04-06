@@ -1,23 +1,23 @@
 <?php
 
-namespace Drupal\listicle_heading\Plugin\CKEditorPlugin;
+namespace Drupal\ckeditor_listicle_heading\Plugin\CKEditorPlugin;
 
 use Drupal\ckeditor\CKEditorPluginBase;
 use Drupal\editor\Entity\Editor;
 
 /**
- * Defines the "listicleh2" plugin.
+ * Defines the "listicleheading" plugin.
  *
  * NOTE: The plugin ID ('id' key) corresponds to the CKEditor plugin name.
  * It is the first argument of the CKEDITOR.plugins.add() function in the
  * plugin.js file.
  *
  * @CKEditorPlugin(
- *   id = "listicleh2",
- *   label = @Translation("Listicle heading ckeditor button")
+ *   id = "listicleheading",
+ *   label = @Translation("Listicle heading")
  * )
  */
-class ListicleHeadingCKEditorButton extends CKEditorPluginBase {
+class ListicleHeading extends CKEditorPluginBase {
 
   /**
    * {@inheritdoc}
@@ -29,11 +29,11 @@ class ListicleHeadingCKEditorButton extends CKEditorPluginBase {
   public function getButtons() {
     // Make sure that the path to the image matches the file structure of
     // the CKEditor plugin you are implementing.
-    $path = drupal_get_path('module', 'listicle_heading') . '/js/plugins/listicleh2';
+    $path = drupal_get_path('module', 'ckeditor_listicle_heading') . '/js/plugins/listicleheading';
     return array(
-      'listicleh2' => array(
-        'label' => t('Listicle Heading ckeditor button'),
-        'image' => $path . '/icons/listicleh2.png',
+      'listicleheading' => array(
+        'label' => t('Listicle Heading'),
+        'image' => $path . '/icons/listicleheading.png',
       ),
     );
   }
@@ -44,7 +44,7 @@ class ListicleHeadingCKEditorButton extends CKEditorPluginBase {
   public function getFile() {
     // Make sure that the path to the plugin.js matches the file structure of
     // the CKEditor plugin you are implementing.
-    return drupal_get_path('module', 'listicle_heading') . '/js/plugins/listicleh2/plugin.js';
+    return drupal_get_path('module', 'ckeditor_listicle_heading') . '/js/plugins/listicleheading/plugin.js';
   }
 
   /**
