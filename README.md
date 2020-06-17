@@ -1,3 +1,5 @@
+**NOTE: Future development will take place on Drupal.org. This repo will be archived soon.**
+
 # Listicle Heading #
 
 A CKEditor plugin for Drupal 8 to create headings preceded by a number and a dot.
